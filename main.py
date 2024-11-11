@@ -136,6 +136,7 @@ def sync(source, replica):
                 logging.error(f"Error removing file {f}: {e}")
 
 
+#only implemented for testing - not required for sync task
 def maxRounds(round_count):
     if round_count >= NMAXROUND:
         logging.warning(f"Max rounds ({NMAXROUND}) hit. Ending process.")
